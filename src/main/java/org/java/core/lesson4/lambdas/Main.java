@@ -15,7 +15,7 @@ public class Main {
 
         r.run(10);*/
 
-        /// принимает Integer возвращает Boolean
+        /// принимает T возвращает Boolean
         /// проверят, что число соответсвует некоторому условию
         Predicate<Integer> predicate = x -> x % 2 == 0;
         System.out.println(predicate.test(2));
