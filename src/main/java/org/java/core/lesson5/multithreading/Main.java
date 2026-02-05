@@ -3,8 +3,7 @@ package org.java.core.lesson5.multithreading;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Main {
-
-    static AtomicInteger atomicCount = new AtomicInteger(0);
+    static AtomicInteger atomic = new AtomicInteger(0);
     static int count = 0;
 
     public static void main(String[] args) throws InterruptedException {
@@ -20,13 +19,13 @@ public class Main {
         // 15330
         // 14188
 
-//        System.out.println(atomicCount.get());
+        System.out.println(atomic.get());
         System.out.println(count);
     }
 
     static void atomicIncrement() {
         for (int i = 0; i < 10_000; i++) {
-            atomicCount.incrementAndGet();
+            atomic.incrementAndGet();
         }
     }
 
