@@ -15,6 +15,7 @@ public class OperationImpl {
             int a,
             int b
     ) {
-        return operation.execute(a, b);
+        return operation
+                .execute(a, b);
     }
 }
