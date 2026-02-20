@@ -11,8 +11,7 @@ public class Converter {
             int num
     ) {
         System.out.println(
-                con
-                        .convert(num)
+                con.convert(num)
         );
     }
 

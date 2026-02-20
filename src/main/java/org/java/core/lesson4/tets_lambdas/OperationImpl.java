@@ -9,13 +9,4 @@ public class OperationImpl {
             default -> throw new RuntimeException("Invalid choice");
         };
     }
-
-    public static int action(
-            Operation operation,
-            int a,
-            int b
-    ) {
-        return operation
-                .execute(a, b);
-    }
 }
